@@ -6,20 +6,20 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "emplyee")
+@Table(name = "employee")
 public class EmployeeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column(name = "firstname")
+    @Column(name = "firstname", length = 50)
     private String firstname;
-    @Column(name = "lastname")
+    @Column(name = "lastname", length = 50)
     private String lastname;
-    @Column(name = "email")
+    @Column(name = "email", length = 50)
     private String email;
-    @Column(name = "telephone")
+    @Column(name = "telephone", length = 50)
     private String telephone;
     @Column(name = "hireDate")
     private Date hireDate;

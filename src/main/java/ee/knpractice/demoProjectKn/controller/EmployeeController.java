@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@CrossOrigin(origins = "*", maxAge = 3600) // hack solution (the beset option is proxy)
 @RestController
 @RequestMapping("/employee")
 public class EmployeeController {

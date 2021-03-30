@@ -10,9 +10,7 @@ public class EmployeeRequestModel {
     private String lastname;
     private String email;
     private String telephone;
-    @JsonFormat
-            (shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
-    private Date hireDate;
+    private String hireDate;
     private boolean active;
 
     public String getFirstname() {
@@ -47,11 +45,11 @@ public class EmployeeRequestModel {
         this.telephone = telephone;
     }
 
-    public Date getHireDate() {
+    public String getHireDate() {
         return hireDate;
     }
 
-    public void setHireDate(Date hireDate) {
+    public void setHireDate(String hireDate) {
         this.hireDate = hireDate;
     }
 
